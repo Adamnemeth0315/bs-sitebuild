@@ -1,0 +1,72 @@
+@font-face{
+    font-family: 'catamaran';
+    src: url('/asstets/fonts/catamaran/static/Catamaran-Medium.ttf');
+}
+@font-face{
+    font-family: 'lato';
+    src: url('/asstets/fonts/lato/Lato-Regular.ttf');
+}
+@font-face{
+    font-family: 'mulish';
+    src: url('/asstets/fonts/muli/static/Mulish-Medium.ttf');
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+/*Navbar*/
+.nav,.main__top {
+    background-image: url('/asstets/img/img/bg-pattern.png'), linear-gradient(-90deg, #b613b6 0%, #FF11DD); /* Ez lesz majd a háttere a felső résznek */
+    background-repeat: repeat;
+}
+
+.title {
+    color: #dab617;
+    font-family: 'catamaran';
+}
+
+.title:hover {
+    color: #FFF;
+}
+
+.navbar-light .nav-item .nav-link {
+    color: #FFF;
+}
+
+
+/*Main top*/
+.main__content{
+    color:#FFD;
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+.btn.btn-outline-light.mt-4{
+    border-radius: 1.2rem;
+    width: 70%;
+}
+
+.btn.btn-outline-light.mt-4:hover{
+    background-color: #fdcc52;
+}
+ 
+
+.phone--img{
+    width: 250px;
+    position: relative;
+}
+
+.phone__inside--img{
+    width: 220px;
+    position: absolute;
+    top:60px;
+    left:50px
+}
+
+
+/*Main mid*/
+.main__mid{
+    background-color:#fdcc52;
+}
