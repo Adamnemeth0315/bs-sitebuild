@@ -11,8 +11,12 @@
     src: url('/asstets/fonts/muli/static/Mulish-Medium.ttf');
 }
 
-*{
+* {
     box-sizing: border-box;
+}
+
+body{
+    margin: 0;
 }
 
 
@@ -48,25 +52,142 @@
     width: 70%;
 }
 
-.btn.btn-outline-light.mt-4:hover{
+.btn.btn-outline-light.mt-4:hover {
     background-color: #fdcc52;
 }
  
 
-.phone--img{
+.phone--img {
     width: 250px;
     position: relative;
 }
 
-.phone__inside--img{
-    width: 220px;
-    position: absolute;
-    top:60px;
-    left:50px
+@media screen and (max-width:1200px){
+    .phone__inside--img {
+        width: 220px;
+        position: absolute;
+        top:60px;
+        right:50px;
+    }
+}
+
+@media screen and (max-width:992px){
+    .phone__inside--img {
+        width: 220px;
+        position: absolute;
+        top:60px;
+        right:-10px
+    }
+}
+
+@media screen and (max-width:768px){
+    .phone__inside--img {
+        width: 220px;
+        position: absolute;
+        top:60px;
+        right:160px
+    }
+}
+
+@media screen and (max-width:575px){
+    .phone__inside--img {
+        width: 220px;
+        position: absolute;
+        top:55px;
+        right:170px
+    }
 }
 
 
 /*Main mid*/
-.main__mid{
+.main__mid {
     background-color:#fdcc52;
+}
+
+/*Main mid 2*/
+.phone--img2 {
+    width: 250px;
+    position: relative;
+}
+
+@media screen and (max-width:1200px){
+    .phone__inside--img2 {
+        width: 220px;
+        position: absolute;
+        top:60px;
+        left:30px
+    }
+}
+
+@media screen and (max-width:992px){
+    .phone__inside--img2 {
+        width: 220px;
+        position: absolute;
+        top:60px;
+        left:30px
+    }
+}
+
+@media screen and (max-width:768px){
+    .phone__inside--img2 {
+        width: 220px;
+        position: absolute;
+        top:60px;
+        left:30px
+    }
+}
+
+@media screen and (max-width:575px){
+    .phone__inside--img2 {
+        width: 220px;
+        position: absolute;
+        top:55px;
+        left:30px
+    }
+}
+
+
+/*Main mid 3*/
+.main__mid--three {
+    background-image: url('/asstets/img/img/bg-cta.jpg');
+    background-repeat: no-repeat;
+}
+
+.btn, .btn-outline-light {
+    border-radius: 1.2rem;
+    width: 30%;
+}
+
+@media screen and (max-width: 992px) {
+    .btn, .btn-outline-light {
+        border-radius: 1rem;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn, .btn-outline-light {
+        border-radius: 1rem;
+        width: 50%;
+    }
+}
+
+.btn.btn-outline-light:hover {
+    background-color: #fdcc52;
+    border: 1px solid#fdcc52;;
+}
+
+
+/*Main footer*/
+.main__footer {
+    background-color: #fdcc52;
+}
+
+.icon {
+    color:#FF2222
+}
+
+/*Footer*/
+.footer {
+    background-color: #333;
 }
