@@ -19,10 +19,14 @@ body{
     margin: 0;
 }
 
+p, span, small {
+    font-family: 'mulish';
+}
+
 
 /*Navbar*/
 .nav,.main__top {
-    background-image: url('/asstets/img/img/bg-pattern.png'), linear-gradient(-90deg, #b613b6 0%, #FF11DD); /* Ez lesz majd a háttere a felső résznek */
+    background-image: url('/asstets/img/img/bg-pattern.png'), linear-gradient(-90deg, #b613b6 0%, #FF11DD); 
     background-repeat: repeat;
 }
 
@@ -40,6 +44,12 @@ body{
     font-family: 'lato';
 }
 
+.nav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
 
 /*Main top*/
 .main__content{
@@ -51,10 +61,13 @@ body{
 .btn.btn-outline-light.mt-4{
     border-radius: 1.2rem;
     width: 70%;
+    font-family:'lato';
 }
 
 .btn.btn-outline-light.mt-4:hover {
     background-color: #fdcc52;
+    border: 1px solid#fdcc52;
+    transition: all .3s ease;
 }
  
 
@@ -63,7 +76,23 @@ body{
     position: relative;
 }
 
-@media screen and (max-width: 1200px){
+.phone__inside--img {
+    width: 220px;
+    position: absolute;
+    top:60px;
+    right:160px;
+}
+
+ @media screen and (min-width: 768px){
+    .phone__inside--img {
+        width: 220px;
+        position: absolute;
+        top:60px;
+        right:-10px;
+    }
+}
+
+@media screen and (min-width: 992px){
     .phone__inside--img {
         width: 220px;
         position: absolute;
@@ -72,32 +101,15 @@ body{
     }
 }
 
-@media screen and (max-width: 992px){
+@media screen and (min-width: 1200px){
     .phone__inside--img {
         width: 220px;
         position: absolute;
         top:60px;
-        right:-10px
+        right:80px;
     }
 }
 
-@media screen and (max-width: 768px){
-    .phone__inside--img {
-        width: 220px;
-        position: absolute;
-        top:60px;
-        right:160px
-    }
-}
-
-@media screen and (max-width: 575px){
-    .phone__inside--img {
-        width: 220px;
-        position: absolute;
-        top:55px;
-        right:170px
-    }
-}
 
 
 /*Main mid*/
@@ -115,7 +127,14 @@ body{
     position: relative;
 }
 
-@media screen and (max-width:1200px){
+.phone__inside--img2 {
+    width: 220px;
+    position: absolute;
+    top:60px;
+    left:30px
+}
+
+@media screen and (min-width:768px){
     .phone__inside--img2 {
         width: 220px;
         position: absolute;
@@ -124,7 +143,7 @@ body{
     }
 }
 
-@media screen and (max-width:992px){
+@media screen and (min-width:992px){
     .phone__inside--img2 {
         width: 220px;
         position: absolute;
@@ -133,20 +152,11 @@ body{
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (min-width:1200px){
     .phone__inside--img2 {
         width: 220px;
         position: absolute;
         top:60px;
-        left:30px
-    }
-}
-
-@media screen and (max-width:575px){
-    .phone__inside--img2 {
-        width: 220px;
-        position: absolute;
-        top:55px;
         left:30px
     }
 }
@@ -161,6 +171,7 @@ body{
     background-image: url('/asstets/img/img/bg-cta.jpg');
     background-repeat: no-repeat;
     z-index: -1;
+    filter: opacity(1);
     height: 100%;
     background-position: center;
     background-size: cover;
@@ -185,9 +196,14 @@ body{
     }
 }
 
+.btn.btn-outline-light{
+    font-family:'lato';
+}
+
 .btn.btn-outline-light:hover {
     background-color: #fdcc52;
-    border: 1px solid#fdcc52;;
+    border: 1px solid#fdcc52;
+    transition: all .3s ease;
 }
 
 
