@@ -196,8 +196,28 @@ body{
     background-color: #fdcc52;
 }
 
-.icon {
-    color:#FF2222
+.fa-facebook {
+    color: rgba(12, 22, 247, .9)
+}
+
+.fa-facebook:hover {
+    color: rgba(12, 22, 247, 1)
+}
+
+.fa-google-plus {
+    color:rgba(255, 33, 12, .9)
+}
+
+.fa-google-plus:hover {
+    color:rgba(255, 33, 12, 1)
+}
+
+.fa-twitter-square {
+    color:rgba(13, 180, 202, 0.9)
+}
+
+.fa-twitter-square:hover {
+    color:rgba(13, 180, 202, 1)
 }
 
 /*Footer*/
