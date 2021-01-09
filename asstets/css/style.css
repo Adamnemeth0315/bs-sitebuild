@@ -37,6 +37,7 @@ body{
 
 .navbar-light .nav-item .nav-link {
     color: #FFF;
+    font-family: 'lato';
 }
 
 
@@ -62,7 +63,7 @@ body{
     position: relative;
 }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width: 1200px){
     .phone__inside--img {
         width: 220px;
         position: absolute;
@@ -71,7 +72,7 @@ body{
     }
 }
 
-@media screen and (max-width:992px){
+@media screen and (max-width: 992px){
     .phone__inside--img {
         width: 220px;
         position: absolute;
@@ -80,7 +81,7 @@ body{
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px){
     .phone__inside--img {
         width: 220px;
         position: absolute;
@@ -89,7 +90,7 @@ body{
     }
 }
 
-@media screen and (max-width:575px){
+@media screen and (max-width: 575px){
     .phone__inside--img {
         width: 220px;
         position: absolute;
@@ -102,6 +103,10 @@ body{
 /*Main mid*/
 .main__mid {
     background-color:#fdcc52;
+}
+
+.google-play {
+    width: 135px;
 }
 
 /*Main mid 2*/
@@ -146,11 +151,19 @@ body{
     }
 }
 
+.card-header {
+    background-image: linear-gradient(90deg, #da1515 0%, #a00b8a);
+    height: 4rem;
+}
 
 /*Main mid 3*/
 .main__mid--three {
     background-image: url('/asstets/img/img/bg-cta.jpg');
     background-repeat: no-repeat;
+    z-index: -1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 .btn, .btn-outline-light {
@@ -190,4 +203,18 @@ body{
 /*Footer*/
 .footer {
     background-color: #333;
+}
+
+.footer__tittle {
+    color: #AAA;
+    font-size: .8rem;
+}
+
+.footer__link{
+    color:#AAA;
+    font-size: .7rem;
+}
+
+.footer__link:hover {
+    color: #fdcc52;
 }
