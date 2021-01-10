@@ -10,7 +10,7 @@ const sticky = navbar.offsetTop;
 function stickyNavBarFunction() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky");
-        navbar.classList.add('bg-light')
+        navbar.classList.add("bg-light");
     } else {
         navbar.classList.remove("sticky");
     }
